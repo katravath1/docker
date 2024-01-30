@@ -2,7 +2,7 @@ version: '3.8'
 services:
   vprodb:
     build:
-      context: ./Docker-ffiles/db
+      context: ./Docker-files/db
       dockerfile: Dockerfile
     image: katravath55/db
     container_name: vprodb
@@ -29,7 +29,7 @@ services:
 
   vproapp:
     build:
-      context: ./Docker-ffiles/app
+      context: ./Docker-files/app
       dockerfile: Dockerfile
     image: katravath55/app
     container_name: vproapp
@@ -41,7 +41,7 @@ services:
 
   vproweb:
     build:
-      context: ./Docker-ffiles/web
+      context: ./Docker-files/web
       dockerfile: Dockerfile
     image: katravath55/web
     container_name: vproweb
